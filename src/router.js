@@ -10,12 +10,6 @@ const router = createBrowserRouter([
   {
     path: "/nombre-joueurs",
     element: <PlayersNumber />
-  },
-  {
-    path: "/*",
-    element: <div>
-      error
-    </div>
   }
 ]);
 
