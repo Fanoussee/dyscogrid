@@ -1,3 +1,5 @@
+import Button from "../formComponents/Button"
+
 const Home = () => {
   return (
     <div className="home">
@@ -5,7 +7,7 @@ const Home = () => {
       <div className="home-welcome">
         <h2 className="home-welcome-title">Bienvenue sur Dyscogrid</h2>
       </div>
-      <button className="button" onClick={() => console.log("j'ai cliqué !")}>Commencer une partie</button>
+      <Button label={"Commencer la partie"} href={"/nombre-joueurs"} />
     </div>
   )
 }
