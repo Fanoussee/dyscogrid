@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "./Home"
 import PlayersNumber from "./PlayersNumber"
 import Layout from "../components/Layout"
+import RoutesPathEnum from "../enums/RoutesPathEnum"
 
 const App = () => {
   return (
@@ -9,8 +10,8 @@ const App = () => {
       <BrowserRouter basename='/dyscogrid'>
       <Layout>
         <Routes>
-          <Route exact path="/" element={<Home />}></Route>
-          <Route path="/nombre-joueurs" element={<PlayersNumber />}></Route>
+          <Route exact path={RoutesPathEnum.origin} element={<Home />}></Route>
+          <Route path={RoutesPathEnum.playersNumber} element={<PlayersNumber />}></Route>
         </Routes>
       </Layout>
       </BrowserRouter>
