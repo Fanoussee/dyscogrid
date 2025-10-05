@@ -4,9 +4,15 @@
   border: 2px solid #4C68A7;
   border-radius: 2rem;
   cursor: pointer;
+  min-width: 15rem;
+  text-align: center;
 }
 
 .button-title {
   text-decoration: none;
   color: white;
+}
+
+.button-large {
+  font-size: x-large;
 }

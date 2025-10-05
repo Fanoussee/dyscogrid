@@ -1,11 +1,8 @@
-import { Link } from 'react-router-dom'
-import './button.css'
+import "./button.css"
 
-const Button = ({ label, href }) => {
+const Button = ({ label, onClick }) => {
   return (
-    <nav className='button'>
-      <Link className='button-title' to={href}>{label}</Link>
-    </nav>
+    <button className="button button-title button-large" onClick={onClick}>{label}</button>
   )
 }
 

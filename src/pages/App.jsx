@@ -3,15 +3,21 @@ import Home from "./Home"
 import PlayersNumber from "./PlayersNumber"
 import Layout from "../components/Layout"
 import RoutesPathEnum from "../enums/RoutesPathEnum"
+import useGame from "../hooks/useGame"
 
 const App = () => {
+  const {gameHandler} = useGame();
+
   return (
     <div>
       <BrowserRouter basename='/dyscogrid'>
       <Layout>
         <Routes>
           <Route exact path={RoutesPathEnum.origin} element={<Home />}></Route>
-          <Route path={RoutesPathEnum.playersNumber} element={<PlayersNumber />}></Route>
+          <Route 
+            path={RoutesPathEnum.playersNumber}
+            element={<PlayersNumber gameHandler={gameHandler} />}
+          ></Route>
         </Routes>
       </Layout>
       </BrowserRouter>
