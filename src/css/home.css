@@ -1,16 +1,16 @@
 .home {
   background-color: #27447C;
-  padding: 2rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 2rem;
+  gap: 2rem;
 }
 
 .home-title {
   color: #E3343B;
-  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -22,9 +22,5 @@
   padding: 1rem;
   width: 80%;
   border-radius: 2rem;
-  margin-bottom: 2rem;
-}
-
-.home-welcome-title {
   text-align: center;
 }

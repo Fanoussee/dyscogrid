@@ -3,8 +3,8 @@ import './button.css'
 
 const Button = ({ label, href }) => {
   return (
-    <nav>
-      <Link className='button' to={href}>{label}</Link>
+    <nav className='button'>
+      <Link className='button-title' to={href}>{label}</Link>
     </nav>
   )
 }

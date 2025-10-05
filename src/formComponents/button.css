@@ -1,9 +1,12 @@
 .button {
   padding: 1rem;
   background-color: #4C68A7;
-  color: white;
   border: 2px solid #4C68A7;
   border-radius: 2rem;
   cursor: pointer;
+}
+
+.button-title {
   text-decoration: none;
+  color: white;
 }
