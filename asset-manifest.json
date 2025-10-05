@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/dyscogrid/static/css/main.dfcab642.css",
-    "main.js": "/dyscogrid/static/js/main.2a51d09e.js",
+    "main.css": "/dyscogrid/static/css/main.c934fde0.css",
+    "main.js": "/dyscogrid/static/js/main.e04c4f7f.js",
     "index.html": "/dyscogrid/index.html",
-    "main.dfcab642.css.map": "/dyscogrid/static/css/main.dfcab642.css.map",
-    "main.2a51d09e.js.map": "/dyscogrid/static/js/main.2a51d09e.js.map"
+    "main.c934fde0.css.map": "/dyscogrid/static/css/main.c934fde0.css.map",
+    "main.e04c4f7f.js.map": "/dyscogrid/static/js/main.e04c4f7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfcab642.css",
-    "static/js/main.2a51d09e.js"
+    "static/css/main.c934fde0.css",
+    "static/js/main.e04c4f7f.js"
   ]
 }
