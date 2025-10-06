@@ -1,4 +1,5 @@
-.players-firstnames {
+.game-turn-button {
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
 }

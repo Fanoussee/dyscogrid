@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import RoutesPathEnum from "../enums/RoutesPathEnum"
 import useGame from "../hooks/useGame"
 import PlayersFirstNames from "./PlayersFirstNames"
+import GameTurn from "./GameTurn"
 
 const App = () => {
   const {gameHandler} = useGame();
@@ -22,6 +23,10 @@ const App = () => {
           <Route 
             path={RoutesPathEnum.playersFirstNames}
             element={<PlayersFirstNames gameHandler={gameHandler} />}
+          ></Route>
+          <Route 
+            path={RoutesPathEnum.gameTurn}
+            element={<GameTurn gameHandler={gameHandler} />}
           ></Route>
         </Routes>
       </Layout>
