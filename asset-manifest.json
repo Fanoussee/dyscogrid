@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/dyscogrid/static/css/main.75e95d6f.css",
-    "main.js": "/dyscogrid/static/js/main.f708290d.js",
+    "main.css": "/dyscogrid/static/css/main.a204cf41.css",
+    "main.js": "/dyscogrid/static/js/main.261cd659.js",
+    "static/media/double_hexagone.png": "/dyscogrid/static/media/double_hexagone.c169134b1bb19432ea50.png",
+    "static/media/pont.png": "/dyscogrid/static/media/pont.569ffe2d1fc5e2581345.png",
+    "static/media/hexagone.png": "/dyscogrid/static/media/hexagone.82960472974ef10c919b.png",
     "index.html": "/dyscogrid/index.html",
-    "main.75e95d6f.css.map": "/dyscogrid/static/css/main.75e95d6f.css.map",
-    "main.f708290d.js.map": "/dyscogrid/static/js/main.f708290d.js.map"
+    "main.a204cf41.css.map": "/dyscogrid/static/css/main.a204cf41.css.map",
+    "main.261cd659.js.map": "/dyscogrid/static/js/main.261cd659.js.map"
   },
   "entrypoints": [
-    "static/css/main.75e95d6f.css",
-    "static/js/main.f708290d.js"
+    "static/css/main.a204cf41.css",
+    "static/js/main.261cd659.js"
   ]
 }
