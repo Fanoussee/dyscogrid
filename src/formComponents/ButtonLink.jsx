@@ -1,12 +1,10 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './button.css'
 
-const Button = ({ label, href }) => {
+const ButtonLink = ({ label, href, onClick }) => {
   return (
-    <nav className='button'>
-      <Link className='button-title' to={href}>{label}</Link>
-    </nav>
+    <NavLink className='button' to={href} onClick={onClick}>{label}</NavLink>
   )
 }
 
-export default Button
+export default ButtonLink
