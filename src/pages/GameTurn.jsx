@@ -17,7 +17,7 @@ const GameTurn = ({ gameHandler }) => {
           playerIndex => {
             const playeurFirstNameFound = prop(`joueur${playerIndex}`)(playersFirstNames);
 
-            return <div className="separator">
+            return <div className="separator" key={playerIndex}>
               <GameTurnPlayer 
                 playerFirstName={playeurFirstNameFound}
                 playerIndex={playerIndex}

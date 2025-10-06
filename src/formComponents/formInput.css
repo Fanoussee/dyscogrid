@@ -1,6 +1,6 @@
 .form-input {
   display: flex;
-  gap: 5rem;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

@@ -12,7 +12,7 @@ const Figures = () => {
       <Title title={"Figures"} />
       <div className='figures'>
         { map(
-          figure => <div>
+          figure => <div key={figure.label}>
             <img className='figure-img' src={figure.src} alt={figure.alt} />
             <div className='figure-label'>{figure.label}</div>
           </div>
