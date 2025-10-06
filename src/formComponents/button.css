@@ -9,3 +9,8 @@
   color: white;
   font-size: x-large;
 }
+
+.button-disabled {
+  cursor: not-allowed;
+  opacity: 50%;
+}

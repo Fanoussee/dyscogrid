@@ -1,14 +1,15 @@
 import './formInput.css';
 
-const FormInput = ({ label, register}) => {
+const FormInput = ({ label, register, disabled }) => {
   return (
     <div className="form-input">
-            <div className="label">{label}</div>
-            <input 
-              className="input"
-              {...register}
-            />
-          </div>
+      <div className="label">{label}</div>
+      <input 
+        className="input"
+        {...register}
+        disabled={disabled}
+      />
+    </div>
   )
 }
 

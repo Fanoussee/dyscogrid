@@ -1,17 +1,12 @@
 import { map, prop, range } from "ramda";
-import { useForm } from "react-hook-form";
 import GameTurnPlayer from "../components/GameTurnPlayer";
-import Figures from "../components/Figures";
 import ButtonLink from "../formComponents/ButtonLink";
 
 const GameTurn = ({ gameHandler }) => {
-  const { playersFirstNames, playersNumber, gameTurn, setGameTurn } = gameHandler;
+  const { playersFirstNames, playersNumber, getScores, register, setValue, watch } = gameHandler;
   
-  const { register, setValue } = useForm();
-
   return (
     <form>
-      <Figures />
       {
         map(
           playerIndex => {
@@ -23,16 +18,20 @@ const GameTurn = ({ gameHandler }) => {
                 playerIndex={playerIndex}
                 register={register}
                 setValue={setValue}
+                watch={watch}
               />
             </div>
           }
         )(range(1, playersNumber + 1))
       }
       <div className="game-turn-button">
-        <ButtonLink label={"Tour suivant"} onClick={() => setGameTurn(gameTurn + 1)} />
+        <ButtonLink 
+          label={"Tour suivant"}
+          onClick={getScores}
+        />
       </div>
     </form>
   )
 }
 
-export default GameTurn
+export default GameTurn;
