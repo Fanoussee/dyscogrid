@@ -1,0 +1,18 @@
+.figures-bloc {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.figures {
+  display: flex;
+  flex-direction: column;
+}
+
+.figure-img {
+  width: 50%;
+}
+
+.figure-label {
+  color: #E3343B;
+  font-size: large;
+}
