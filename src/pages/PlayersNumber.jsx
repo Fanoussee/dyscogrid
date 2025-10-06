@@ -1,6 +1,7 @@
 import { map } from "ramda";
 import Title from "../components/Title"
 import ButtonLink from "../formComponents/ButtonLink"
+import RoutesPathEnum from "../enums/RoutesPathEnum";
 
 const PlayersNumber = ({ gameHandler }) => {
   const { setPlayersNumber, possiblePlayersNumber } = gameHandler;
@@ -10,9 +11,11 @@ const PlayersNumber = ({ gameHandler }) => {
       <Title title={"Combien y-a-t-il de joueurs ?"} />
       <div className="group-buttons">
         { map(
-          playerNumber => <ButtonLink 
+          playerNumber => <ButtonLink
+            key={playerNumber}
             label={`${playerNumber} joueur${playerNumber > 1 ? "s" : ""}`} 
             onClick={() => setPlayersNumber(playerNumber)}
+            href={RoutesPathEnum.playersFirstNames}
           />
         )(possiblePlayersNumber) }
       </div>

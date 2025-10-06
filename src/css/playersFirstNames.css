@@ -1,0 +1,25 @@
+.players-firstnames {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-firstname {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-firstname-label {
+  color: #E3343B;
+  margin-bottom: 2rem;
+  font-size: x-large;
+}
+
+.player-firstname-input {
+  margin-bottom: 2rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border-color: #E3343B;
+  font-size: large;
+}
