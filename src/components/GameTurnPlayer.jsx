@@ -1,6 +1,6 @@
 import Title from './Title'
-import FormInput from '../formComponents/FormInput'
-import ButtonLink from '../formComponents/ButtonLink'
+import FormInput from '../components/FormInput'
+import ButtonLink from '../components/ButtonLink'
 import { map, or } from 'ramda'
 import { isNotNilOrEmpty } from 'ramda-adjunct'
 import { pioches } from '../helpers/pioches'

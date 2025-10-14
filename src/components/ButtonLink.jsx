@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
-import './button.css'
+import '../css/button.css'
 
-const ButtonLink = ({ label, href, onClick, disabled }) => {
+const ButtonLink = ({ label, href, onClick, disabled, className }) => {
   return (
     <NavLink 
       aria-disabled={disabled}

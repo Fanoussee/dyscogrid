@@ -1,5 +1,5 @@
 .layout {
-  background-color: #27447C;
+  background-color: var(--secondary-color);
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -10,6 +10,7 @@
 }
 
 .layout-title {
-  color: #E3343B;
   text-align: center;
+  color: var(--text-color);
+  text-shadow: 2px 2px black;
 }

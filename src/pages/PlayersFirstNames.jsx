@@ -1,9 +1,9 @@
 import { map, range } from "ramda";
 import Title from "../components/Title";
-import ButtonLink from "../formComponents/ButtonLink";
+import ButtonLink from "../components/ButtonLink";
 import { useForm } from "react-hook-form";
 import RoutesPathEnum from "../enums/RoutesPathEnum";
-import FormInput from "../formComponents/FormInput";
+import FormInput from "../components/FormInput";
 
 const PlayersFirstNames = ({ gameHandler }) => {
   const { playersNumber, setPlayersFirstNames } = gameHandler;

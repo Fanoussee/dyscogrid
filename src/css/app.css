@@ -1,3 +1,11 @@
+:root {
+  --button-color: #B7B78E;
+  --button-shadow: #6C6943;
+  --text-color: #DA1503;
+  --primary-color: #96a5da;
+  --secondary-color: #1E2C55;
+}
+
 body {
   display: flex;
   flex-direction: column;

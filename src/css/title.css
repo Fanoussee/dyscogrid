@@ -1,4 +1,4 @@
 .title {
-  color: #E3343B;
+  color: var(--primary-color);
   margin-bottom: 2rem;
 }

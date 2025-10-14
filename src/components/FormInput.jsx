@@ -1,4 +1,4 @@
-import './formInput.css';
+import '../css/formInput.css';
 
 const FormInput = ({ label, register, disabled }) => {
   return (

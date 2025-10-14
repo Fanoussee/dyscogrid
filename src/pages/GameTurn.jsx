@@ -1,6 +1,6 @@
 import { map, prop, range } from "ramda";
 import GameTurnPlayer from "../components/GameTurnPlayer";
-import ButtonLink from "../formComponents/ButtonLink";
+import ButtonLink from "../components/ButtonLink";
 
 const GameTurn = ({ gameHandler }) => {
   const { playersFirstNames, playersNumber, getScores, register, setValue, watch } = gameHandler;

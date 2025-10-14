@@ -1,6 +1,6 @@
 import { map } from "ramda";
 import Title from "../components/Title"
-import ButtonLink from "../formComponents/ButtonLink"
+import ButtonLink from "../components/ButtonLink"
 import RoutesPathEnum from "../enums/RoutesPathEnum";
 
 const PlayersNumber = ({ gameHandler }) => {
