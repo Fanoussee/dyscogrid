@@ -1,16 +1,15 @@
 import { useEffect, useState } from "react";
 import { add, append, compose, defaultTo, map, range, reduce } from 'ramda'
 import { useForm } from "react-hook-form";
+import usePlayersNumber from "./usePlayersNumber";
+import usePlayersFirstNames from "./usePlayersFirstNames";
 
 const useGame = () => {
-  const [playersNumber, setPlayersNumber] = useState(0);
-  const possiblePlayersNumber = range(1, 5);
-  const [playersFirstNames, setPlayersFirstNames] = useState();
+  const { register, setValue, watch, reset, handleSubmit } = useForm();
+  const { playersNumber, setPlayersNumber, possiblePlayersNumber, playersIndexes } = usePlayersNumber();
+  const { playersFirstNames, onValidatePlayersFirstNames } = usePlayersFirstNames(watch, playersIndexes);
   const [scores, setScores] = useState([]);
   
-  const { register, setValue, watch, reset } = useForm();
-
-  const playersIndexes = range(1, playersNumber + 1);
   const piochesIndexes = range(1, 5);
 
   const getPointsPioche = (playerIndex) => map(
@@ -48,14 +47,16 @@ const useGame = () => {
   return {
     gameHandler: {
       playersNumber,
+      playersIndexes,
       setPlayersNumber,
       possiblePlayersNumber,
       playersFirstNames,
-      setPlayersFirstNames,
       register,
       setValue,
       watch,
-      getScores
+      handleSubmit,
+      getScores,
+      onValidatePlayersFirstNames
     }
   }
 }

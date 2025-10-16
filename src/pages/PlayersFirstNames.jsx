@@ -1,31 +1,28 @@
-import { map, range } from "ramda";
+import { map } from "ramda";
 import Title from "../components/Title";
-import ButtonLink from "../components/ButtonLink";
-import { useForm } from "react-hook-form";
-import RoutesPathEnum from "../enums/RoutesPathEnum";
+import Button from "../components/Button";
 import FormInput from "../components/FormInput";
+import { useNavigate } from "react-router-dom";
 
 const PlayersFirstNames = ({ gameHandler }) => {
-  const { playersNumber, setPlayersFirstNames } = gameHandler;
-
-  const { register, watch } = useForm()
+  const { playersIndexes, register, handleSubmit, onValidatePlayersFirstNames } = gameHandler;
+  const navigate = useNavigate();
 
   return (
-    <form className="players-firstnames">
+    <form className="players-firstnames" onSubmit={handleSubmit(onValidatePlayersFirstNames(navigate))}>
       <Title title={"Quels sont les prénoms des joueurs ?"} />
-      { map(
+      {map(
         playerIndex => {
-          return <FormInput 
+          return <FormInput
             key={playerIndex}
             label={`Joueur ${playerIndex}`}
             register={register(`joueur${playerIndex}`)}
           />
         }
-      )(range(1, playersNumber + 1))}
-      <ButtonLink 
+      )(playersIndexes)}
+      <Button
         label={"Jouez !"}
-        onClick={() => setPlayersFirstNames(watch())}
-        href={RoutesPathEnum.gameTurn}
+        type={"submit"}
       />
     </form>
   )

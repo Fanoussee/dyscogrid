@@ -1,17 +1,16 @@
-import { NavLink } from 'react-router-dom'
 import '../css/button.css'
 
-const ButtonLink = ({ label, href, onClick, disabled, className }) => {
+const Button = ({ label, onClick, disabled, type }) => {
   return (
-    <NavLink 
+    <button
       aria-disabled={disabled}
       className={`button ${disabled ? 'button-disabled' : ''}`}
-      to={href}
       onClick={disabled ? null : onClick}
+      type={type}
     >
       {label}
-    </NavLink>
+    </button>
   )
 }
 
-export default ButtonLink
+export default Button

@@ -1,6 +1,6 @@
 import { map, prop, range } from "ramda";
 import GameTurnPlayer from "../components/GameTurnPlayer";
-import ButtonLink from "../components/ButtonLink";
+import Button from "../components/Button";
 
 const GameTurn = ({ gameHandler }) => {
   const { playersFirstNames, playersNumber, getScores, register, setValue, watch } = gameHandler;
@@ -25,7 +25,7 @@ const GameTurn = ({ gameHandler }) => {
         )(range(1, playersNumber + 1))
       }
       <div className="game-turn-button">
-        <ButtonLink 
+        <Button 
           label={"Tour suivant"}
           onClick={getScores}
         />
