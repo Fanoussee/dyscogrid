@@ -5,9 +5,9 @@ import usePlayersNumber from "./usePlayersNumber";
 import usePlayersFirstNames from "./usePlayersFirstNames";
 
 const useGame = () => {
-  const { register, setValue, watch, reset, handleSubmit } = useForm();
+  const { register, setValue, watch, reset, handleSubmit, formState: { errors, isValid } } = useForm();
   const { playersNumber, setPlayersNumber, possiblePlayersNumber, playersIndexes } = usePlayersNumber();
-  const { playersFirstNames, onValidatePlayersFirstNames } = usePlayersFirstNames(watch, playersIndexes);
+  const { playersFirstNames, onValidatePlayersFirstNames } = usePlayersFirstNames(watch, isValid);
   const [scores, setScores] = useState([]);
   
   const piochesIndexes = range(1, 5);
@@ -54,6 +54,7 @@ const useGame = () => {
       register,
       setValue,
       watch,
+      errors,
       handleSubmit,
       getScores,
       onValidatePlayersFirstNames

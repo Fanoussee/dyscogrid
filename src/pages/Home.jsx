@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
+
   return (
     <>
       <h2 className="home">Bienvenue sur la grille de scores du Triomino</h2>
